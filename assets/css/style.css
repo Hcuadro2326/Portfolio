@@ -1,0 +1,141 @@
+:root {
+    --teal: rgba(1,168,158,255);
+    --black: rgb(0, 0, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    color: teal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    padding: 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 a{
+    font-weight: bolder;
+    font-size: 50px;
+    color: teal;
+    margin: 0px;
+    display: inline;
+}
+
+header a {
+    color: teal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+header nav {
+   margin: 5px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: right;
+    list-style: none;
+}
+
+header nav ul li a {
+    box-shadow: inset 0 0 0 0 teal;
+    color: teal;
+    margin: 10 -.25rem;
+    padding: 10 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-weight:bold;
+    font-size: 30px;
+}
+
+header nav ul li a:hover {
+   box-shadow: inset 200px 0 0 0 teal;
+   color: black;
+}
+
+.hero {
+    background-image: url(../images/bluecode.jpg);
+    background-size:cover;
+    height: 750px;
+    transform: scale(1,1) ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-position:center;
+    background-attachment:fixed;
+    position: relative;
+}
+
+.hero img {
+    height: 854.5px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
+.intro {
+    text-align: left;
+    line-height: 1.4;
+    background: black;
+    padding: 25px 65px 50px 0;
+    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    
+}
+
+.intro h2 {
+    font-weight: bold;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    position:sticky;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+}
+
+.intro p{
+    font-size: 25px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.intro p, a {
+    font-size: 25px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    color: teal;
+}
+
+.flex-row {
+    flex:auto;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
